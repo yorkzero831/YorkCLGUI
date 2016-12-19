@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBC69E7A1E080578004FD1AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E791E080578004FD1AB /* main.cpp */; };
+		DBC69E821E0805BE004FD1AB /* imgui_impl_glfw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E801E0805BE004FD1AB /* imgui_impl_glfw.cpp */; };
+		DBC69E8D1E0805CE004FD1AB /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E851E0805CE004FD1AB /* imgui_demo.cpp */; };
+		DBC69E8E1E0805CE004FD1AB /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E861E0805CE004FD1AB /* imgui_draw.cpp */; };
+		DBC69E8F1E0805CE004FD1AB /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E881E0805CE004FD1AB /* imgui.cpp */; };
+		DBC69E941E080621004FD1AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E931E080621004FD1AB /* Cocoa.framework */; };
+		DBC69E961E080629004FD1AB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E951E080629004FD1AB /* CoreVideo.framework */; };
+		DBC69E981E080632004FD1AB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E971E080632004FD1AB /* OpenGL.framework */; };
+		DBC69E9D1E080B18004FD1AB /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBC69E741E080578004FD1AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DBC69E761E080578004FD1AB /* YorkCLGUI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = YorkCLGUI; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC69E791E080578004FD1AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DBC69E801E0805BE004FD1AB /* imgui_impl_glfw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_impl_glfw.cpp; sourceTree = "<group>"; };
+		DBC69E811E0805BE004FD1AB /* imgui_impl_glfw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_impl_glfw.h; sourceTree = "<group>"; };
+		DBC69E841E0805CE004FD1AB /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = YorkCLGUI/imgui/imconfig.h; sourceTree = "<group>"; };
+		DBC69E851E0805CE004FD1AB /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_demo.cpp; path = YorkCLGUI/imgui/imgui_demo.cpp; sourceTree = "<group>"; };
+		DBC69E861E0805CE004FD1AB /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = YorkCLGUI/imgui/imgui_draw.cpp; sourceTree = "<group>"; };
+		DBC69E871E0805CE004FD1AB /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui_internal.h; path = YorkCLGUI/imgui/imgui_internal.h; sourceTree = "<group>"; };
+		DBC69E881E0805CE004FD1AB /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = YorkCLGUI/imgui/imgui.cpp; sourceTree = "<group>"; };
+		DBC69E891E0805CE004FD1AB /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui.h; path = YorkCLGUI/imgui/imgui.h; sourceTree = "<group>"; };
+		DBC69E8A1E0805CE004FD1AB /* stb_rect_pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_rect_pack.h; path = YorkCLGUI/imgui/stb_rect_pack.h; sourceTree = "<group>"; };
+		DBC69E8B1E0805CE004FD1AB /* stb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_textedit.h; path = YorkCLGUI/imgui/stb_textedit.h; sourceTree = "<group>"; };
+		DBC69E8C1E0805CE004FD1AB /* stb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_truetype.h; path = YorkCLGUI/imgui/stb_truetype.h; sourceTree = "<group>"; };
+		DBC69E931E080621004FD1AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DBC69E951E080629004FD1AB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		DBC69E971E080632004FD1AB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.2.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBC69E731E080578004FD1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC69E981E080632004FD1AB /* OpenGL.framework in Frameworks */,
+				DBC69E961E080629004FD1AB /* CoreVideo.framework in Frameworks */,
+				DBC69E941E080621004FD1AB /* Cocoa.framework in Frameworks */,
+				DBC69E9D1E080B18004FD1AB /* libglfw.3.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBC69E6D1E080578004FD1AB = {
+			isa = PBXGroup;
+			children = (
+				DBC69E831E0805C2004FD1AB /* imgui */,
+				DBC69E781E080578004FD1AB /* YorkCLGUI */,
+				DBC69E771E080578004FD1AB /* Products */,
+				DBC69E921E080621004FD1AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBC69E771E080578004FD1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBC69E761E080578004FD1AB /* YorkCLGUI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBC69E781E080578004FD1AB /* YorkCLGUI */ = {
+			isa = PBXGroup;
+			children = (
+				DBC69E801E0805BE004FD1AB /* imgui_impl_glfw.cpp */,
+				DBC69E811E0805BE004FD1AB /* imgui_impl_glfw.h */,
+				DBC69E791E080578004FD1AB /* main.cpp */,
+			);
+			path = YorkCLGUI;
+			sourceTree = "<group>";
+		};
+		DBC69E831E0805C2004FD1AB /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				DBC69E841E0805CE004FD1AB /* imconfig.h */,
+				DBC69E851E0805CE004FD1AB /* imgui_demo.cpp */,
+				DBC69E861E0805CE004FD1AB /* imgui_draw.cpp */,
+				DBC69E871E0805CE004FD1AB /* imgui_internal.h */,
+				DBC69E881E0805CE004FD1AB /* imgui.cpp */,
+				DBC69E891E0805CE004FD1AB /* imgui.h */,
+				DBC69E8A1E0805CE004FD1AB /* stb_rect_pack.h */,
+				DBC69E8B1E0805CE004FD1AB /* stb_textedit.h */,
+				DBC69E8C1E0805CE004FD1AB /* stb_truetype.h */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		DBC69E921E080621004FD1AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */,
+				DBC69E971E080632004FD1AB /* OpenGL.framework */,
+				DBC69E951E080629004FD1AB /* CoreVideo.framework */,
+				DBC69E931E080621004FD1AB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBC69E751E080578004FD1AB /* YorkCLGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC69E7D1E080578004FD1AB /* Build configuration list for PBXNativeTarget "YorkCLGUI" */;
+			buildPhases = (
+				DBC69E721E080578004FD1AB /* Sources */,
+				DBC69E731E080578004FD1AB /* Frameworks */,
+				DBC69E741E080578004FD1AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YorkCLGUI;
+			productName = YorkCLGUI;
+			productReference = DBC69E761E080578004FD1AB /* YorkCLGUI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBC69E6E1E080578004FD1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Zero;
+				TargetAttributes = {
+					DBC69E751E080578004FD1AB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DBC69E711E080578004FD1AB /* Build configuration list for PBXProject "YorkCLGUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBC69E6D1E080578004FD1AB;
+			productRefGroup = DBC69E771E080578004FD1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBC69E751E080578004FD1AB /* YorkCLGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBC69E721E080578004FD1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC69E7A1E080578004FD1AB /* main.cpp in Sources */,
+				DBC69E821E0805BE004FD1AB /* imgui_impl_glfw.cpp in Sources */,
+				DBC69E8D1E0805CE004FD1AB /* imgui_demo.cpp in Sources */,
+				DBC69E8E1E0805CE004FD1AB /* imgui_draw.cpp in Sources */,
+				DBC69E8F1E0805CE004FD1AB /* imgui.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DBC69E7B1E080578004FD1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DBC69E7C1E080578004FD1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DBC69E7E1E080578004FD1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		DBC69E7F1E080578004FD1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBC69E711E080578004FD1AB /* Build configuration list for PBXProject "YorkCLGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC69E7B1E080578004FD1AB /* Debug */,
+				DBC69E7C1E080578004FD1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC69E7D1E080578004FD1AB /* Build configuration list for PBXNativeTarget "YorkCLGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC69E7E1E080578004FD1AB /* Debug */,
+				DBC69E7F1E080578004FD1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBC69E6E1E080578004FD1AB /* Project object */;
+}
