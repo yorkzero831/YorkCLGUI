@@ -145,6 +145,7 @@ public:
 			if (!strcmp(s_nodeTypes[i].name, name))
 				return createNode(pos, &s_nodeTypes[i]);
 		}
+        return nullptr;
 	}
 
 };
