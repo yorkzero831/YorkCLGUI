@@ -221,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "install_name_tool -change /Users/sakailab_macbook_B/gl3w/build/libgl3w.dylib \"$TARGET_BUILD_DIR\"/libgl3w.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"\n\ninstall_name_tool -change /Users/sakailab_macbook_B/Documents/GLFW/src/Debug/libglfw.3.dylib \"$TARGET_BUILD_DIR\"/libglfw.3.2.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"";
+			shellScript = "install_name_tool -change /Users/sakailab_macbook_B/gl3w/build/libgl3w.dylib @executable_path/libgl3w.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"\n\ninstall_name_tool -change /Users/sakailab_macbook_B/Documents/GLFW/src/Debug/libglfw.3.dylib @executable_path/libglfw.3.2.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
