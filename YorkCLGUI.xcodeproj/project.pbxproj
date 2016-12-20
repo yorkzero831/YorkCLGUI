@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06AD05691E0907EE004F1CF9 /* libgl3w.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		06AD056D1E090B05004F1CF9 /* libgl3w.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DBC69E7A1E080578004FD1AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E791E080578004FD1AB /* main.cpp */; };
 		DBC69E8D1E0805CE004FD1AB /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E851E0805CE004FD1AB /* imgui_demo.cpp */; };
 		DBC69E8E1E0805CE004FD1AB /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E861E0805CE004FD1AB /* imgui_draw.cpp */; };
 		DBC69E8F1E0805CE004FD1AB /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E881E0805CE004FD1AB /* imgui.cpp */; };
 		DBC69E941E080621004FD1AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E931E080621004FD1AB /* Cocoa.framework */; };
 		DBC69E961E080629004FD1AB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E951E080629004FD1AB /* CoreVideo.framework */; };
-		DBC69E9D1E080B18004FD1AB /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */; };
+		DBC69E9D1E080B18004FD1AB /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		DBC69EA01E080D1C004FD1AB /* imgui_impl_glfw_gl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E9E1E080D1C004FD1AB /* imgui_impl_glfw_gl3.cpp */; };
-		DBC69EAC1E081799004FD1AB /* libgl3w.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC69EAB1E081799004FD1AB /* libgl3w.dylib */; };
 		DBC69EB31E0822C9004FD1AB /* YorkConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69EAD1E0822C9004FD1AB /* YorkConnection.cpp */; };
 		DBC69EB41E0822C9004FD1AB /* yorkMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69EAF1E0822C9004FD1AB /* yorkMain.cpp */; };
 		DBC69EB51E0822C9004FD1AB /* YorkNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69EB01E0822C9004FD1AB /* YorkNode.cpp */; };
@@ -23,18 +24,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DBC69E741E080578004FD1AB /* CopyFiles */ = {
+		DBC69E741E080578004FD1AB /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				06AD056D1E090B05004F1CF9 /* libgl3w.dylib in Copy Files */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06AD05681E0907EE004F1CF9 /* libgl3w.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgl3w.dylib; path = /Users/coly30/YorkCLGUI/libgl3w.dylib; sourceTree = "<absolute>"; };
 		DBC69E761E080578004FD1AB /* YorkCLGUI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = YorkCLGUI; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC69E791E080578004FD1AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DBC69E841E0805CE004FD1AB /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = YorkCLGUI/imgui/imconfig.h; sourceTree = "<group>"; };
@@ -48,13 +52,12 @@
 		DBC69E8C1E0805CE004FD1AB /* stb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_truetype.h; path = YorkCLGUI/imgui/stb_truetype.h; sourceTree = "<group>"; };
 		DBC69E931E080621004FD1AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DBC69E951E080629004FD1AB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.2.dylib; sourceTree = "<group>"; };
+		DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.2.dylib; sourceTree = SOURCE_ROOT; };
 		DBC69E9E1E080D1C004FD1AB /* imgui_impl_glfw_gl3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_glfw_gl3.cpp; path = YorkCLGUI/imgui_impl_glfw_gl3.cpp; sourceTree = "<group>"; };
 		DBC69E9F1E080D1C004FD1AB /* imgui_impl_glfw_gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui_impl_glfw_gl3.h; path = YorkCLGUI/imgui_impl_glfw_gl3.h; sourceTree = "<group>"; };
 		DBC69EA81E0813D2004FD1AB /* gl3w.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gl3w.c; sourceTree = "<group>"; };
 		DBC69EA91E0813D2004FD1AB /* gl3w.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gl3w.h; sourceTree = "<group>"; };
 		DBC69EAA1E0813D2004FD1AB /* glcorearb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glcorearb.h; sourceTree = "<group>"; };
-		DBC69EAB1E081799004FD1AB /* libgl3w.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgl3w.dylib; sourceTree = "<group>"; };
 		DBC69EAD1E0822C9004FD1AB /* YorkConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YorkConnection.cpp; sourceTree = SOURCE_ROOT; };
 		DBC69EAE1E0822C9004FD1AB /* YorkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YorkConnection.h; sourceTree = SOURCE_ROOT; };
 		DBC69EAF1E0822C9004FD1AB /* yorkMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yorkMain.cpp; sourceTree = SOURCE_ROOT; };
@@ -68,10 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC69EAC1E081799004FD1AB /* libgl3w.dylib in Frameworks */,
 				DBC69E961E080629004FD1AB /* CoreVideo.framework in Frameworks */,
 				DBC69E941E080621004FD1AB /* Cocoa.framework in Frameworks */,
 				DBC69E9D1E080B18004FD1AB /* libglfw.3.2.dylib in Frameworks */,
+				06AD05691E0907EE004F1CF9 /* libgl3w.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +135,7 @@
 		DBC69E921E080621004FD1AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBC69EAB1E081799004FD1AB /* libgl3w.dylib */,
+				06AD05681E0907EE004F1CF9 /* libgl3w.dylib */,
 				DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */,
 				DBC69E951E080629004FD1AB /* CoreVideo.framework */,
 				DBC69E931E080621004FD1AB /* Cocoa.framework */,
@@ -160,7 +163,7 @@
 			buildPhases = (
 				DBC69E721E080578004FD1AB /* Sources */,
 				DBC69E731E080578004FD1AB /* Frameworks */,
-				DBC69E741E080578004FD1AB /* CopyFiles */,
+				DBC69E741E080578004FD1AB /* Copy Files */,
 			);
 			buildRules = (
 			);
