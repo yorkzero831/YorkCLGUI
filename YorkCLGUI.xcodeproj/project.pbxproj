@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		06A9CD3E1E091E35006CC106 /* libgl3w.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		06AD05691E0907EE004F1CF9 /* libgl3w.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		7A9060721E0920E500E6FC69 /* libglfw.3.2.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = DBC69E9C1E080B18004FD1AB /* libglfw.3.2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DBC69E7A1E080578004FD1AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E791E080578004FD1AB /* main.cpp */; };
 		DBC69E8D1E0805CE004FD1AB /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E851E0805CE004FD1AB /* imgui_demo.cpp */; };
 		DBC69E8E1E0805CE004FD1AB /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E861E0805CE004FD1AB /* imgui_draw.cpp */; };
@@ -30,6 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7A9060721E0920E500E6FC69 /* libglfw.3.2.dylib in Copy Files */,
 				06A9CD3E1E091E35006CC106 /* libgl3w.dylib in Copy Files */,
 			);
 			name = "Copy Files";
@@ -219,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "install_name_tool -change /Users/sakailab_macbook_B/gl3w/build/libgl3w.dylib \"$TARGET_BUILD_DIR\"/libgl3w.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"";
+			shellScript = "install_name_tool -change /Users/sakailab_macbook_B/gl3w/build/libgl3w.dylib \"$TARGET_BUILD_DIR\"/libgl3w.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"\n\ninstall_name_tool -change /Users/sakailab_macbook_B/Documents/GLFW/src/Debug/libglfw.3.dylib \"$TARGET_BUILD_DIR\"/libglfw.3.2.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
