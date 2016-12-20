@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06AD05691E0907EE004F1CF9 /* libgl3w.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
-		06AD056D1E090B05004F1CF9 /* libgl3w.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		06AD056D1E090B05004F1CF9 /* libgl3w.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; };
 		DBC69E7A1E080578004FD1AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E791E080578004FD1AB /* main.cpp */; };
 		DBC69E8D1E0805CE004FD1AB /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E851E0805CE004FD1AB /* imgui_demo.cpp */; };
 		DBC69E8E1E0805CE004FD1AB /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC69E861E0805CE004FD1AB /* imgui_draw.cpp */; };
@@ -38,7 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		06AD05681E0907EE004F1CF9 /* libgl3w.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgl3w.dylib; path = /Users/coly30/YorkCLGUI/libgl3w.dylib; sourceTree = "<absolute>"; };
+		06AD05681E0907EE004F1CF9 /* libgl3w.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgl3w.dylib; sourceTree = SOURCE_ROOT; };
 		DBC69E761E080578004FD1AB /* YorkCLGUI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = YorkCLGUI; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC69E791E080578004FD1AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DBC69E841E0805CE004FD1AB /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = YorkCLGUI/imgui/imconfig.h; sourceTree = "<group>"; };
