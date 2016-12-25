@@ -28,6 +28,7 @@
 
 #ifndef _glfw3_h_
 #define _glfw3_h_
+#pragma clang diagnostic ignored "-Wdocumentation"
 
 #ifdef __cplusplus
 extern "C" {
