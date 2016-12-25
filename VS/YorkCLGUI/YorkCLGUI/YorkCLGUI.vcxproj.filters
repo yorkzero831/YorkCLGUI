@@ -19,6 +19,15 @@
     <Filter Include="gl3w">
       <UniqueIdentifier>{0d689576-581b-4a45-9410-fb2dc39b72c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="YorkWidgets">
+      <UniqueIdentifier>{a3553649-4876-4e49-b236-801a209b8a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="YorkWidgets\header">
+      <UniqueIdentifier>{891a9d2b-bdbd-47f6-9990-7811b69b37ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="YorkWidgets\source">
+      <UniqueIdentifier>{07c569f9-39e8-47e3-9c32-0817f6978b90}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\YorkNodeGraph.cpp">
@@ -47,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="..\..\..\YorkCLGUI\imgui\imgui_draw.cpp">
       <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="YorkWidgets.cpp">
+      <Filter>YorkWidgets\source</Filter>
+    </ClCompile>
+    <ClCompile Include="YorkButton.cpp">
+      <Filter>YorkWidgets\source</Filter>
+    </ClCompile>
+    <ClCompile Include="yorkTest.cpp">
+      <Filter>YorkWidgets\source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,5 +101,14 @@
     <ClInclude Include="..\..\..\YorkCLGUI\imgui\stb_truetype.h">
       <Filter>imgui</Filter>
     </ClInclude>
+    <ClInclude Include="YorkButton.h">
+      <Filter>YorkWidgets\header</Filter>
+    </ClInclude>
+    <ClInclude Include="YorkWidgets.h">
+      <Filter>YorkWidgets\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

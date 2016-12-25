@@ -125,6 +125,9 @@
     <ClCompile Include="..\..\..\yorkMain.cpp" />
     <ClCompile Include="..\..\..\YorkNode.cpp" />
     <ClCompile Include="..\..\..\YorkNodeGraph.cpp" />
+    <ClCompile Include="YorkButton.cpp" />
+    <ClCompile Include="yorkTest.cpp" />
+    <ClCompile Include="YorkWidgets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\GL\gl3w.h" />
@@ -138,6 +141,11 @@
     <ClInclude Include="..\..\..\YorkCLGUI\imgui_impl_glfw_gl3.h" />
     <ClInclude Include="..\..\..\YorkConnection.h" />
     <ClInclude Include="..\..\..\YorkNode.h" />
+    <ClInclude Include="YorkButton.h" />
+    <ClInclude Include="YorkWidgets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
