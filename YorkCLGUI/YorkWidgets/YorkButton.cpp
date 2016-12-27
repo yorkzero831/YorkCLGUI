@@ -2,7 +2,7 @@
 
 namespace YorkWidget
 {
-	YorkButton::YorkButton(ImVec2 pos, ImVec2 size, string title)
+	YorkButton::YorkButton(ImVec2 pos, ImVec2 size, std::string title)
 	{
 		_id		= widget_id++;
 		_pos	= pos;
@@ -18,6 +18,11 @@ namespace YorkWidget
 	YorkButton::~YorkButton()
 	{
 	}
+    
+    void YorkButton::SetClickedFunc(void (*DoClick)(YorkWidget::YorkWidgets *))
+    {
+        _DoClick = DoClick;
+    }
 
 	void YorkButton::DrawWidget(ImDrawList* drawList, ImVec2 offset)
 	{
@@ -37,7 +42,8 @@ namespace YorkWidget
 		ImGui::SetCursorScreenPos(node_rect_min);
 		if (ImGui::InvisibleButton("node", this->_size))
 		{
-			printf_s("clicked");
+			printf("clicked\n");
+            _DoClick(this);
 			bg_color = ImColor(80, 80, 80, 255);	
 		}
 		else
