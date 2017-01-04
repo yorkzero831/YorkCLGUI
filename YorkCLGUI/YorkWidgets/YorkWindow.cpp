@@ -59,6 +59,7 @@ namespace YorkWidget {
             return;
         }
         
+        //ImGui::Image(tex_id, ImVec2(tex_w, tex_h), ImVec2(0,0), ImVec2(1,1), ImColor(255,255,255,255), ImColor(255,255,255,128));
         
         ImGui::SameLine();
         ImGui::BeginGroup();
@@ -74,7 +75,8 @@ namespace YorkWidget {
         int64_t countOfWidgets = _widgetsInWindow.size();
         LOOP(countOfWidgets)
         {
-            _widgetsInWindow.at(ii)->DrawWidget(draw_list, windowPos);
+            if(_widgetsInWindow.at(ii)->GetVisable())
+                _widgetsInWindow.at(ii)->DrawWidget(draw_list, windowPos);
         }
         
         

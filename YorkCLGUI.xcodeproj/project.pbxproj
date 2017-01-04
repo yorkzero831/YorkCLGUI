@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		066FC48E1E1C96FC00BE5CDB /* YorkTextField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 066FC48C1E1C96FC00BE5CDB /* YorkTextField.cpp */; };
 		06A9CD3E1E091E35006CC106 /* libgl3w.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		06AD05691E0907EE004F1CF9 /* libgl3w.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AD05681E0907EE004F1CF9 /* libgl3w.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		06E5ADBF1E1CECF80077D051 /* YorkImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06E5ADBD1E1CECF80077D051 /* YorkImage.cpp */; };
 		06F6D8681E120D9300C7B5B2 /* YorkButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F6D8631E120D9300C7B5B2 /* YorkButton.cpp */; };
 		06F6D8691E120D9300C7B5B2 /* yorkDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F6D8651E120D9300C7B5B2 /* yorkDemo.cpp */; };
 		06F6D86A1E120D9300C7B5B2 /* YorkWidgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F6D8661E120D9300C7B5B2 /* YorkWidgets.cpp */; };
@@ -45,7 +47,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		066FC48C1E1C96FC00BE5CDB /* YorkTextField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YorkTextField.cpp; path = YorkWidgets/YorkTextField.cpp; sourceTree = "<group>"; };
+		066FC48D1E1C96FC00BE5CDB /* YorkTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YorkTextField.h; path = YorkWidgets/YorkTextField.h; sourceTree = "<group>"; };
 		06AD05681E0907EE004F1CF9 /* libgl3w.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgl3w.dylib; sourceTree = SOURCE_ROOT; };
+		06E5ADBD1E1CECF80077D051 /* YorkImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YorkImage.cpp; path = YorkWidgets/YorkImage.cpp; sourceTree = "<group>"; };
+		06E5ADBE1E1CECF80077D051 /* YorkImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YorkImage.h; path = YorkWidgets/YorkImage.h; sourceTree = "<group>"; };
 		06F6D8631E120D9300C7B5B2 /* YorkButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YorkButton.cpp; path = YorkWidgets/YorkButton.cpp; sourceTree = "<group>"; };
 		06F6D8641E120D9300C7B5B2 /* YorkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YorkButton.h; path = YorkWidgets/YorkButton.h; sourceTree = "<group>"; };
 		06F6D8651E120D9300C7B5B2 /* yorkDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = yorkDemo.cpp; path = YorkWidgets/yorkDemo.cpp; sourceTree = "<group>"; };
@@ -98,18 +104,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066FC48F1E1C970D00BE5CDB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				06E5ADBE1E1CECF80077D051 /* YorkImage.h */,
+				06F6D8641E120D9300C7B5B2 /* YorkButton.h */,
+				06F6D8671E120D9300C7B5B2 /* YorkWidgets.h */,
+				06F6D8701E121AEA00C7B5B2 /* YorkWindow.h */,
+				06F6D8721E1241C900C7B5B2 /* YorkWindowsManager.h */,
+				066FC48D1E1C96FC00BE5CDB /* YorkTextField.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
 		06F6D8621E120D8200C7B5B2 /* YorkWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				066FC48F1E1C970D00BE5CDB /* Header */,
 				06F6D8631E120D9300C7B5B2 /* YorkButton.cpp */,
-				06F6D8641E120D9300C7B5B2 /* YorkButton.h */,
 				06F6D8661E120D9300C7B5B2 /* YorkWidgets.cpp */,
-				06F6D8671E120D9300C7B5B2 /* YorkWidgets.h */,
 				06F6D86D1E12198700C7B5B2 /* YorkWindow.cpp */,
-				06F6D8701E121AEA00C7B5B2 /* YorkWindow.h */,
-				06F6D8721E1241C900C7B5B2 /* YorkWindowsManager.h */,
 				06F6D8731E1241E200C7B5B2 /* YorkWindowsManager.cpp */,
 				06F6D8651E120D9300C7B5B2 /* yorkDemo.cpp */,
+				066FC48C1E1C96FC00BE5CDB /* YorkTextField.cpp */,
+				06E5ADBD1E1CECF80077D051 /* YorkImage.cpp */,
 			);
 			name = YorkWidgets;
 			sourceTree = "<group>";
@@ -265,10 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC69EB51E0822C9004FD1AB /* YorkNode.cpp in Sources */,
+				066FC48E1E1C96FC00BE5CDB /* YorkTextField.cpp in Sources */,
 				DBC69EB31E0822C9004FD1AB /* YorkConnection.cpp in Sources */,
 				06F6D8681E120D9300C7B5B2 /* YorkButton.cpp in Sources */,
 				DBC69EB61E0822C9004FD1AB /* YorkNodeGraph.cpp in Sources */,
 				DBC69E7A1E080578004FD1AB /* main.cpp in Sources */,
+				06E5ADBF1E1CECF80077D051 /* YorkImage.cpp in Sources */,
 				DBC69EB41E0822C9004FD1AB /* yorkMain.cpp in Sources */,
 				DBC69EA01E080D1C004FD1AB /* imgui_impl_glfw_gl3.cpp in Sources */,
 				06F6D8691E120D9300C7B5B2 /* yorkDemo.cpp in Sources */,

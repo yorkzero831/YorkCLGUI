@@ -27,7 +27,11 @@ namespace YorkWidget
 		 @param offset offset of window pos
 		 */
 #pragma mark Draw this widget
-		virtual void DrawWidget(ImDrawList* drawList, ImVec2 offset) {};
+		virtual void DrawWidget(ImDrawList* drawList, ImVec2 offset) {}
+        
+        void SetVisable(bool value){ _visable = value; }
+        
+        bool GetVisable(){ return _visable; }
 
 	private:
 
@@ -35,6 +39,7 @@ namespace YorkWidget
 		ImVec2 _pos;
 		ImVec2 _size;
 		int64_t _id;
+        bool    _visable = true;
 	};
 
 	

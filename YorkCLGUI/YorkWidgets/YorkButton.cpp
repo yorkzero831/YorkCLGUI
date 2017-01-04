@@ -17,6 +17,7 @@ namespace YorkWidget
 
 	YorkButton::~YorkButton()
 	{
+        
 	}
     
     void YorkButton::SetClickedFunc(void (*DoClick)(YorkWidget::YorkWidgets *))
@@ -43,25 +44,35 @@ namespace YorkWidget
 		if (ImGui::InvisibleButton("node", this->_size))
 		{
 			printf("clicked\n");
-            _DoClick(this);
-			bg_color = ImColor(80, 80, 80, 255);	
+            if(_DoClick != nullptr)
+                _DoClick(this);
+			bg_color = _clickedColor;
 		}
 		else
 		{
 			//background color
-			bg_color = ImColor(100, 100, 100, 255);
+			bg_color = _normalColor;
 		}
-
-		drawList->AddRectFilled(node_rect_min, node_rect_max, bg_color, 4.0f);
+        
+        
+        drawList->AddRectFilled(node_rect_min, node_rect_max, ImColor(0,0,0), 3.0f);
+		drawList->AddRectFilled(node_rect_min + ImVec2(0.5,0.5), node_rect_max - ImVec2(0.5,0.5), bg_color, 3.0f);
+        
 
 		pos.x = node_rect_min.x + (_size.x / 2) - textSize.x / 2;
 		pos.y = node_rect_min.y + (_size.y / 2) - textSize.y / 2;
 
 		ImGui::SetCursorScreenPos(pos);
 
-		ImGui::PushFont;
-		
+        
+        
+        ImGui::PushStyleColor(ImGuiCol_Text, ImColor(0,0,0));
+        
 		ImGui::Text("%s", this->_title.c_str());
+        
+        ImGui::PopStyleColor();
+        
+        
 
 		// Draw text bg area
 		//ImVec2 titleArea = node_rect_max;

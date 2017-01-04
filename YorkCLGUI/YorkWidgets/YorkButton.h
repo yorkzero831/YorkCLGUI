@@ -20,9 +20,10 @@ namespace YorkWidget
 		ImVec2      _titleSize;
 		ImVec2      _titlePos;
 		ImVec2      _titleLength;
-		ImColor     _clickedColor;
+		ImColor     _clickedColor = ImColor(180, 180, 180);
+        ImColor     _normalColor  = ImColor(245, 245, 245);
         
-        void (*_DoClick)(YorkWidgets*);
+        void (*_DoClick)(YorkWidgets*) = nullptr;
 
 	};
 
