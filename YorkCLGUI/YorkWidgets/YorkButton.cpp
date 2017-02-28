@@ -27,7 +27,7 @@ namespace YorkWidget
 
 	void YorkButton::DrawWidget(ImDrawList* drawList, ImVec2 offset)
 	{
-		ImGui::PushID(this->_id);
+		ImGui::PushID((int)this->_id);
 
 		ImVec2 node_rect_min = offset + this->_pos;
 
@@ -43,7 +43,7 @@ namespace YorkWidget
 		ImGui::SetCursorScreenPos(node_rect_min);
 		if (ImGui::InvisibleButton("node", this->_size))
 		{
-			printf("clicked\n");
+            YorkLog("clicked\n");
             if(_DoClick != nullptr)
                 _DoClick(this);
 			bg_color = _clickedColor;

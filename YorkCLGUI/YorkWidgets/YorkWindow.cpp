@@ -7,8 +7,12 @@
 //
 
 #include "YorkWindow.h"
+#include "YorkResourceManager.h"
+#include "YorkWidgetsManager.h"
 
+#include "YorkImageButton.h"
 
+using namespace YorkManager;
 
 namespace YorkWidget {
     
@@ -30,6 +34,7 @@ namespace YorkWidget {
     {
         _widgetsInWindow.push_back(one);
     }
+    
     
     void YorkWindow::DrawView()
     {
@@ -78,7 +83,7 @@ namespace YorkWidget {
             if(_widgetsInWindow.at(ii)->GetVisable())
                 _widgetsInWindow.at(ii)->DrawWidget(draw_list, windowPos);
         }
-        
+        //YorkManager::YorkTextFieldManager::Instance()->FocusTextField();
         
         
         ImGui::EndGroup();
@@ -87,12 +92,16 @@ namespace YorkWidget {
         ImGui::PopStyleColor(2);
     }
     
+    
+    
     void YorkWindow::DrawWindow()
     {
         // Setup window
         //glfwSetErrorCallback(error_callback);
         if (!glfwInit())
             exit(1);
+        
+        
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -111,22 +120,31 @@ namespace YorkWidget {
         
         
         ImVec4 clear_color = ImColor(255, 255, 255);
+
+        YorkResourceManager::Instance()->BindImages();
         
         // Main loop
         while (!glfwWindowShouldClose(window))
         {
+            
             ImGuiIO& io = ImGui::GetIO();
             glfwPollEvents();
             ImGui_ImplGlfwGL3_NewFrame();
-            
+
             //
             DrawView();
+            
+            //
+            
             
             // Rendering
             glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
             glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
             glClear(GL_COLOR_BUFFER_BIT);
+            
             ImGui::Render();
+            
+            
             glfwSwapBuffers(window);
         }
         

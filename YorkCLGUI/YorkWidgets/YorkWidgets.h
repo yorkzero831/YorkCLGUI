@@ -1,6 +1,7 @@
 #pragma once
 
 #include "imgui.h"
+#include "YorkDefine.h"
 #include <vector>
 #include <math.h>
 #include <algorithm>
@@ -8,6 +9,7 @@
 #include <string>
 #include <vector>
 #include <map>
+
 //using std::string;
 
 namespace YorkWidget
@@ -26,12 +28,15 @@ namespace YorkWidget
 		 @param drawList the drawList of imgui
 		 @param offset offset of window pos
 		 */
-#pragma mark Draw this widget
 		virtual void DrawWidget(ImDrawList* drawList, ImVec2 offset) {}
         
-        void SetVisable(bool value){ _visable = value; }
+        virtual void SetVisable(bool value){ _visable = value; }
         
         bool GetVisable(){ return _visable; }
+        
+        ImVec2 GetPosition(){ return _pos; }
+        
+        ImVec2 GetSize(){ return _size; }
 
 	private:
 

@@ -18,11 +18,16 @@ namespace YorkWidget
         YorkTextField(ImVec2 pos, ImVec2 size, std::string context = "");
         ~YorkTextField();
         
+        virtual void SetVisable(bool value);
+        
         virtual void DrawWidget(ImDrawList* drawList, ImVec2 offset);
         
         void SetEnterKeyFunc();
         
         void SetValue(std::string value);
+        std::string GetValue();
+        
+        long GetValueLength();
         
         void SetIsNumOnly(bool v){ _isNumOnly = v; }
         void SetIsReadOnly(bool v){ _isReadOnly = v; }
@@ -32,12 +37,23 @@ namespace YorkWidget
         
         void SetEnterKeyFunc(void (*DoEnterKey)(YorkWidgets*)){ _DoEnterKey = DoEnterKey; }
         
+        void SetFocus();
+        
+        void DoEnterKey(){ if(_DoEnterKey != NULL) _DoEnterKey(this); }
+        
     protected:
         char _context[512];
-        bool _isNumOnly = false;
-        bool _isReadOnly = false;
+        bool _isNumOnly     = false;
+        bool _isReadOnly    = false;
+        bool _focusFlag     = false;
+        int _maxCharPerLine = 0;
+        
         
         void (*_DoEnterKey)(YorkWidgets*) = nullptr;
+        
+        int (*_CharFilter)(ImGuiTextEditCallbackData *data);
+        
+        
     };
 }
 

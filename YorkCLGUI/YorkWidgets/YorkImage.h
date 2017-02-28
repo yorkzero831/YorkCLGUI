@@ -10,13 +10,35 @@
 
 #include "YorkWidgets.h"
 
+#include <Add_in/SOIL/SOIL.h>
+#include <GLFW/glfw3.h>
+
 namespace YorkWidget
 {
     class YorkImage
     {
     public:
-//        YorkImage(std::string filePath);
-//        bool LoadImageFromFile(std::string filePath);
+        YorkImage();
+        YorkImage(std::string filePath);
+        int width;
+        int height;
+        int channels;
+        bool LoadImageFromFile(std::string filePath);
+        
+        unsigned char* GetImageData();
+        
+        void BindImage();
+        
+        GLuint GetImageID();
+        
+        void SetImageID(const GLuint idV);
+        
+    protected:
+        unsigned char *_imageData;
+        
+    private:
+        GLuint _texID = 0;
     };
 }
+
 
